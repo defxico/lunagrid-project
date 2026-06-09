@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LunaGrid - Módulos operacionais da colônia lunar.">
+  <title>LunaGrid | Módulos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <a class="brand" href="index.html" aria-label="Ir para o dashboard LunaGrid">
+        <span class="brand-mark"><i class="bi bi-boxes" aria-hidden="true"></i></span>
+        <span>Luna<span>Grid</span></span>
+      </a>
+      <nav class="nav-menu" aria-label="Menu principal">
+        <a class="nav-link-custom" href="index.html"><i class="bi bi-grid-1x2" aria-hidden="true"></i> Dashboard</a>
+        <a class="nav-link-custom" href="recursos.html"><i class="bi bi-droplet" aria-hidden="true"></i> Recursos</a>
+        <a class="nav-link-custom" href="alertas.html"><i class="bi bi-exclamation-triangle" aria-hidden="true"></i> Alertas</a>
+        <a class="nav-link-custom active" href="modulos.html" aria-current="page"><i class="bi bi-cpu" aria-hidden="true"></i> Módulos</a>
+      </nav>
+      <div class="station-card" aria-label="Estado da estação central">
+        <div class="station-orb" aria-hidden="true"></div>
+        <div><strong>Luna Base Station</strong><span>Online</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">Infraestrutura da Colônia</p>
+          <h1 class="page-title">Módulos</h1>
+          <p class="page-subtitle">Visão unificada dos seis módulos críticos da colônia, com status textual, recurso principal e indicador de risco ou eficiência.</p>
+        </div>
+        <span class="status-badge status-warning">6 módulos monitorados</span>
+      </header>
+
+      <section class="row g-4" aria-label="Cards dos módulos da colônia">
+        <div class="col-12 col-lg-6 col-xl-4">
+          <article class="colony-card" id="habitat-core">
+            <div class="colony-visual"><i class="bi bi-house-heart" aria-hidden="true"></i></div>
+            <p class="card-label">Habitação</p>
+            <h2>Habitat Core</h2>
+            <p>Módulo principal de convivência, descanso, suporte humano e controle operacional do interior da colônia.</p>
+            <div class="module-stats">
+              <span class="status-text status-success">Status: Estável</span>
+              <span>Recurso principal: Água</span>
+            </div>
+            <div class="module-details">
+              <div>
+                <strong>Indicador operacional</strong>
+                <span>Pressão em 101 kPa e ocupação de 6 de 12 tripulantes.</span>
+              </div>
+              <div>
+                <strong>Risco ou eficiência</strong>
+                <span>Consumo hídrico 12% acima da meta. Requer ajuste de uso interno.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+          <article class="colony-card" id="biodome">
+            <div class="colony-visual"><i class="bi bi-flower1" aria-hidden="true"></i></div>
+            <p class="card-label">Produção agrícola</p>
+            <h2>BioDome</h2>
+            <p>Módulo de cultivo hidropônico responsável pela produção de alimentos frescos e pela estabilidade do estoque nutricional.</p>
+            <div class="module-stats">
+              <span class="status-text status-danger">Status: Crítico</span>
+              <span>Recurso principal: Alimentos</span>
+            </div>
+            <div class="module-details">
+              <div>
+                <strong>Indicador operacional</strong>
+                <span>Umidade em 58% e temperatura média de 22 °C.</span>
+              </div>
+              <div>
+                <strong>Risco ou eficiência</strong>
+                <span>Produção em 47% da meta. Prioridade máxima para recuperação do ciclo agrícola.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+          <article class="colony-card" id="solar-array">
+            <div class="colony-visual"><i class="bi bi-sun" aria-hidden="true"></i></div>
+            <p class="card-label">Energia</p>
+            <h2>Solar Array</h2>
+            <p>Campo de painéis solares que alimenta sistemas principais, baterias de reserva e reforços para operações críticas.</p>
+            <div class="module-stats">
+              <span class="status-text status-success">Status: Estável</span>
+              <span>Recurso principal: Energia</span>
+            </div>
+            <div class="module-details">
+              <div>
+                <strong>Indicador operacional</strong>
+                <span>Produção atual de 1,42 MW com suporte contínuo à base.</span>
+              </div>
+              <div>
+                <strong>Risco ou eficiência</strong>
+                <span>Eficiência média de 86% e manutenção preventiva já programada.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+          <article class="colony-card" id="water-recycler">
+            <div class="colony-visual"><i class="bi bi-recycle" aria-hidden="true"></i></div>
+            <p class="card-label">Reciclagem hídrica</p>
+            <h2>Water Recycler</h2>
+            <p>Sistema de tratamento, reaproveitamento e redistribuição de água para consumo humano, cultivo e manutenção.</p>
+            <div class="module-stats">
+              <span class="status-text status-warning">Status: Atenção</span>
+              <span>Recurso principal: Água</span>
+            </div>
+            <div class="module-details">
+              <div>
+                <strong>Indicador operacional</strong>
+                <span>Recuperação de 92% do volume processado.</span>
+              </div>
+              <div>
+                <strong>Risco ou eficiência</strong>
+                <span>Alta eficiência com carga elevada. Exige monitoramento próximo do fluxo de entrada.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+          <article class="colony-card" id="life-support">
+            <div class="colony-visual"><i class="bi bi-lungs" aria-hidden="true"></i></div>
+            <p class="card-label">Suporte de vida</p>
+            <h2>Life Support</h2>
+            <p>Módulo responsável por oxigênio, filtragem, pressão interna e suporte atmosférico para a tripulação.</p>
+            <div class="module-stats">
+              <span class="status-text status-success">Status: Estável</span>
+              <span>Recurso principal: Oxigênio</span>
+            </div>
+            <div class="module-details">
+              <div>
+                <strong>Indicador operacional</strong>
+                <span>Reserva de oxigênio em 91% com filtros em operação nominal.</span>
+              </div>
+              <div>
+                <strong>Risco ou eficiência</strong>
+                <span>Eficiência estável e folga segura para o ciclo atual.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4">
+          <article class="colony-card" id="communications">
+            <div class="colony-visual"><i class="bi bi-broadcast-pin" aria-hidden="true"></i></div>
+            <p class="card-label">Comunicação</p>
+            <h2>Communications</h2>
+            <p>Módulo de telemetria, enlace orbital, sincronização com satélites e transmissão contínua com centros externos.</p>
+            <div class="module-stats">
+              <span class="status-text status-info">Status: Online</span>
+              <span>Recurso principal: Dados e telemetria</span>
+            </div>
+            <div class="module-details">
+              <div>
+                <strong>Indicador operacional</strong>
+                <span>Sinal forte e uptime de 99,8% na janela monitorada.</span>
+              </div>
+              <div>
+                <strong>Risco ou eficiência</strong>
+                <span>Baixo risco operacional e boa redundância de enlace.</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
