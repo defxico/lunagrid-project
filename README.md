@@ -79,5 +79,4 @@ O projeto se conecta principalmente aos seguintes Objetivos de Desenvolvimento S
 
 ## Links
 
-- Repositório GitHub: [INSERIR LINK DO REPOSITÓRIO GITHUB PÚBLICO]
-- Vídeo-pitch: [INSERIR LINK DO VÍDEO-PITCH]
+- Repositório GitHub: https://github.com/defxico/lunagrid-project
